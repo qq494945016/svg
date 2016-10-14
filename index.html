@@ -1,13 +1,18 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Frameset//EN">
-<html>
-	<head>
-		<TITLE>Frameset Template</TITLE>
-	</head>
+<!DOCTYPE html>
+<html lang="en">
 
-		<frameset rows=10%,* framespacing=100>
-			 <frame src="Bcol.html" name="Bb" id ="Bb">
-			 <frame src="Ccol.html" name="C" id ="C">
-			 <!--frame src="T11003-2823PS07-11.svg"-->
-		</frameset>
-
+<head>
+    <TITLE>Frameset Template</TITLE>
+    <script src="jquery-1.8.3.min.js"></script>
+    <script type="text/javascript">
+    $('#btn').on('click', function() {
+        alert($('#text').val());
+    });
+    </script>
+</head>
+<frameset rows=10%,* framespacing=100>
+    <frame src="Bcol.html" name="Bb" id="Bb">
+        <frame src="Ccol.html" name="C" id="C">
+            <!--frame src="T11003-2823PS07-11.svg"-->
+</frameset>
 </html>

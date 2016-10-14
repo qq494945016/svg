@@ -1,43 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
 
-
-<html>
-<head><title>SVG Demonstration</title>
+<head>
+    <title>SVG Demonstration</title>
+    <script src="jquery-1.8.3.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function(){
+    	function a(){
+    		alert($('text').val());
+    	}
+    	$('#btn').on('click',function(){
+    		alert($('#text').val());
+    	});
+    });
+    </script>
 </head>
+
 <body>
-<div style="text-align:center;clear:both">
-	<script src="/gg_bd_ad_720x90.js" type="text/javascript"></script>
-	<script src="/follow.js" type="text/javascript"></script>
-	<script  type="text/javascript" src="test.js"></script>
-	<script>
-	function showmsg1()
-	{
-		//alert("just test");
-		//parent.window.showmsg();
-		//parent.B.document.showmsg();
-		//parent.frames[B].window.showmsg();
-		alert("this is in html C, C insert a svg file");
-		parent.Bb.showmsg();
-		
-
-	}
-
-	</script>
-</div>
- <h2>SVG Demonstration</h2>
-   <p>A page may have other code besides the SVG image.</p>
-    <!--embed src="T11003-2823PS07-11.svg" width="300" height="200"   
-           type="image/svg-xml" /-->
-	<!--object type="image/svg+xml" data="T11003-2823PS07-11.svg"><!--
-           width="300" height="200" viewBox="0 0 1750 1750" preserveAspectRatio="xMinYMin"-->
-		   
-	<!--/object-->
-
-
-		<P>
-			
-			<INPUT id="Button3" type="button" value="==" name="Button3" onclick="showmsg1()">&nbsp;&nbsp;
-		</P>
-			<iframe src="T11003-2823PS07-11.svg" width="900" height="600">
- </body>
-
+    </div>
+    <h2>SVG Demonstration</h2>
+    <p>A page may have other code besides the SVG image.</p>
+    <P>
+        <input type="text" id="text" value="">
+        <input type="button" id="btn" value="btn" onclick="a()">
+    </P>
+    <iframe src="T11003-2823PS07-11.svg" width="900" height="600">
+</body>
 </html>
